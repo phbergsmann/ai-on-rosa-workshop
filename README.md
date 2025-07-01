@@ -1,5 +1,5 @@
-# OpenShift AI + Azure AI Workshop = Better together... An end-2-end solution for all your AI needs!
-Join us for an exciting workshop where we explore the powerful combination of OpenShift AI and Azure AI—showing how they truly are better together! This hands-on session is designed specifically to work off an use-case (insurance), providing participants with guided labs and practical exercises to help uncover and implement AI-driven solutions.
+# OpenShift AI + Amazon Bedrock Workshop = Better together... An end-2-end solution for all your AI needs!
+Join us for an exciting workshop where we explore the powerful combination of OpenShift AI and Amazon Bedrock—showing how they truly are better together! This hands-on session is designed specifically to work off an use-case (insurance), providing participants with guided labs and practical exercises to help uncover and implement AI-driven solutions.
 
 # Transforming Claims Processing for Maximum Efficiency!
 Get ready to dive into the future of insurance with Parasol, an innovative company using AI to supercharge the efficiency of claim processing! We're harnessing cutting-edge models and technologies to revolutionize how things are done.
@@ -10,11 +10,11 @@ Throughout this hands-on exercise, you’ll explore how AI can simplify your wor
 
 And the best part? While we’re working with a predefined insurance use case, we’re confident the knowledge and skills you gain will be invaluable for your own AI projects.
 
-Ready to collaborate with Red Hat and Microsoft on your use case? We’re here to support you every step of the way—reach out, and let’s make it happen!
+Ready to collaborate with Red Hat and Amazon Web Services on your use case? We’re here to support you every step of the way—reach out, and let’s make it happen!
 
 ## Introduction
 
-This repository contains the code, instructions, resources and materials associated with the Lab called **OpenShift AI + Azure AI Workshop**.
+This repository contains the code, instructions, resources and materials associated with the Lab called **OpenShift AI + Amazon Bedrock Workshop**.
 
 To consult the static version of the instructions, please use [this URL](https://rh-aiservices-bu.github.io/parasol-insurance/)
 
@@ -134,26 +134,26 @@ done
 </details>
 
 
-# OpenShift AI + Azure AI Architecture
+# OpenShift AI + Amazon Bedrock Architecture
 Let’s begin with an in-depth look at the architecture of our solution.
+<!---
+ ![Architecture Diagram](architecture-diagram.jpeg "Architecture Diagram")
+-->
+The entire platform is hosted on AWS, where we harness the combined power of OpenShift AI running on Red Hat OpenShift Service on AWS (ROSA) along with a suite of AWS Bedrock services. This powerful combination enables us to create an advanced, scalable solution designed to meet all of your AI needs.
 
-![Architecture Diagram](architecture-diagram.jpeg "Architecture Diagram")
+Red Hat OpenShift Service on AWS (ROSA) is an exceptional, fully managed application platform that has been co-engineered and is jointly supported by both AWS and Red Hat. It provides the perfect foundation for running enterprise-grade applications. When you integrate OpenShift AI on top of ROSA, you can build, train, and deploy AI models seamlessly within a robust, cloud-native environment.
 
-The entire platform is hosted on Azure, where we harness the combined power of OpenShift AI running on Azure Red Hat OpenShift along with a suite of Azure AI services. This powerful combination enables us to create an advanced, scalable solution designed to meet all of your AI needs.
-
-Azure Red Hat OpenShift (ARO) is an exceptional, fully managed application platform that has been co-engineered and is jointly supported by both Microsoft and Red Hat. It provides the perfect foundation for running enterprise-grade applications. When you integrate OpenShift AI on top of ARO, you can build, train, and deploy AI models seamlessly within a robust, cloud-native environment.
-
-On top of that, Azure offers an array of fully managed AI services like Azure OpenAI, Azure AI Search, and many others. These services allow you to focus on driving business value instead of worrying about the complexities of implementing and maintaining infrastructure. With Azure's managed offerings, you're able to accelerate innovation without the overhead of managing an entire AI platform.
+On top of that, AWS offers an array of fully managed AI services like Amazon Bedrock, Amazon Bedrock Knowledge Bases, and many others. These services allow you to focus on driving business value instead of worrying about the complexities of implementing and maintaining infrastructure. With AWS's managed offerings, you're able to accelerate innovation without the overhead of managing an entire AI platform.
 
 For Parasol's solution, we’ve chosen the following combination of services:
 
-- Azure Red Hat OpenShift (ARO): The foundation for hosting both frontend and backend services.
+- Red Hat OpenShift Service on AWS (ROSA): The foundation for hosting both frontend and backend services.
 - OpenShift AI: Providing the AI capabilities on top of ARO.
-- SLM Deployment on ARO to compare results with GPT4o
-- Azure OpenAI GPT-4o: Powering the natural language interface for efficient interaction.
-- Azure AI Search: Serving as a highly capable vector database, with added features beyond just vector storage
-- Azure Managed PostgreSQL: Supporting our backend database needs, specifically for handling claims.
+- SLM Deployment on ROSA to compare results with Amazon Nova
+- Amazon Nova: Powering the natural language interface for efficient interaction.
+- Amazon Bedrock Knowledge Bases: Serving as a highly capable vector database, with added features beyond just vector storage
+- Amazon Aurora PostgreSQL: Supporting our backend database needs, specifically for handling claims.
 
-In this architecture, the frontend and backend services are running on ARO, with OpenShift AI fully integrated. We leverage Azure OpenAI GPT-4o for a natural language processing interface, making it easier for users to interact with the system. For data storage and management, we rely on Azure Managed PostgreSQL for the claims database, while Azure AI Search serves as our vector database, offering enhanced features to improve data retrieval and search functionalities.
+In this architecture, the frontend and backend services are running on ROSA, with OpenShift AI fully integrated. We leverage Amazon Nova for a natural language processing interface, making it easier for users to interact with the system. For data storage and management, we rely on Amazon Aurora PostgreSQL for the claims database, while Amazon Bedrock Knowledge Bases serves as our vector database, offering enhanced features to improve data retrieval and search functionalities.
 
 By combining these technologies, we create a streamlined, highly efficient solution that allows businesses to focus on innovation and driving real results without the complexity of managing AI platforms.
