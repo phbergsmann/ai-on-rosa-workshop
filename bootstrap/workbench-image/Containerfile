@@ -1,12 +1,10 @@
-FROM quay.io/modh/odh-generic-data-science-notebook@sha256:d0ba5fc23e2b3846763f60e8ade8a0f561cdcd2bf6717df6e732f6f8b68b89c4
+FROM quay.io/modh/odh-generic-data-science-notebook@sha256:7bf5f368d452d461b7c6517c1142ca36475f3ce8a84ab04b498002c2fbf06dde
 
 RUN pip install --upgrade pip
 
-RUN pip install pipenv openai \
-    azure-identity azure-search-documents \
-    langchain-openai \
+RUN pip install pipenv \
+    langchain_aws \
     text_generation \
     opencv-python ultralytics \
     'numpy<2' \
-    torch==2.2.2+cpu --extra-index-url https://download.pytorch.org/whl/cpu \
-    https://github.com/paulczar/langchain/releases/download/azure-ai-search/langchain_community-0.3.21-py3-none-any.whl#sha256=824e20e2c556265dc418651ecc511354da75fb9255187a330299b1cd24004fa7 \
+    torch==2.2.2+cpu --extra-index-url https://download.pytorch.org/whl/cpu
