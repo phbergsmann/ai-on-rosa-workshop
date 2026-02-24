@@ -42,6 +42,8 @@ image::02/02-01-app-switch.png[]
 [.bordershadow]
 image::02/02-01-rhoai-projects-page.png[]
 
+* If you are asked to log in, press the button and select the Cognito option
+
 If you got this far and saw all that, congratulations, you properly connected to the {rhoai} Dashboard Application!
 
 We are now ready to start the {ic}.
