@@ -32,7 +32,7 @@ image::02/02-01-login1.png[width=50%]
 [.bordershadow]
 image::02/02-01-ocp-projects-page.png[]
 
-* Click on the application switchen in the top right corner (9 dots) and click on Red Hat OpenShift AI:
+* Click on the application switcher in the top right corner (9 dots) and click on Red Hat OpenShift AI:
 +
 [.bordershadow]
 image::02/02-01-app-switch.png[]
