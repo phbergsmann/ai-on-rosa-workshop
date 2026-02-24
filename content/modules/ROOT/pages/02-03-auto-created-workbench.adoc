@@ -15,7 +15,7 @@ image::02/02-03-open-link.png[]
 
 * Then:
 
-** Authenticate with the same credentials as earlier:
+** Authenticate with the same credentials as earlier, through the Cognito option:
 *** Your account id: `{user}`
 *** Your password: `{password}`
 
