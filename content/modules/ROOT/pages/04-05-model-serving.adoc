@@ -6,53 +6,6 @@ include::_attributes.adoc[]
 .. With almost identical information
 .. But we will change the bucket name from `{user}` to `models`
 
-== Create a Data Connection
-
-* First go back to your https://rhods-dashboard-redhat-ods-applications.{openshift_cluster_ingress_domain}/projects/{user}[Red Hat OpenShift AI dashboard,window=_blank]
-* In your Data Science project, create a Data Connection that refers to the shared MinIO.
-* Here is the info you need to enter:
-** Name:
-[.lines_space]
-[.console-input]
-[source, text]
-[subs=attributes+]
-Shared Minio - model
-** Access Key:
-[.lines_space]
-[.console-input]
-[source, text]
-[subs=attributes+]
-{minio-user}
-** Secret Key:
-[.lines_space]
-[.console-input]
-[source, text]
-[subs=attributes+]
-{minio-pass}
-** Endpoint:
-[.lines_space]
-[.console-input]
-[source, text]
-[subs=attributes+]
-{minio-endpoint}
-** Region:
-[.lines_space]
-[.console-input]
-[source, text]
-[subs=attributes+]
-us
-** Bucket:
-[.lines_space]
-[.console-input]
-[source, text]
-[subs=attributes+]
-models
-
-* The result should look like:
-+
-[.bordershadow]
-image::04/model-data-connection.png[model connection]
-
 == Create a Model Server
 
 In your project create a model server:
