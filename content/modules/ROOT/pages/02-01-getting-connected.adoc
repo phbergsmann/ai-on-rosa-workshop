@@ -27,18 +27,12 @@ image::02/02-01-login3.png[width=50%]
 [.bordershadow]
 image::02/02-01-login1.png[width=50%]
 
-* Because the password is so simple (`{password}`), your browser might display a scary message such as:
-+
-[.bordershadow]
-image::02/02-01-login-scary.png[]
-* It is safe here to ignore this message when it pops up.
-
 * After you authenticate, the result should look like:
 +
 [.bordershadow]
 image::02/02-01-ocp-projects-page.png[]
 
-* Click on the application switchen in the top right corner (9 dots) and click on Red Hat OpenShift AI:
+* Click on the application switcher in the top right corner (9 dots) and click on Red Hat OpenShift AI:
 +
 [.bordershadow]
 image::02/02-01-app-switch.png[]
@@ -47,6 +41,8 @@ image::02/02-01-app-switch.png[]
 +
 [.bordershadow]
 image::02/02-01-rhoai-projects-page.png[]
+
+* If you are asked to log in, press the button and select the Cognito option
 
 If you got this far and saw all that, congratulations, you properly connected to the {rhoai} Dashboard Application!
 
